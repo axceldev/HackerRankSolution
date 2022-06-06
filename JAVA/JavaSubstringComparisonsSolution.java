@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class JavaSubstringComparisonsSolution {
@@ -13,18 +12,26 @@ public class JavaSubstringComparisonsSolution {
     }
 
     public static String getSmallestAndLargest(String s, int k) {
-        String smallest = "";
-        String largest = "";
-        String[] ts = new String[s.length()];
-        for (int i = 0; i <= s.length() - k; i++) {
-            ts[i] = s.substring(i, i + k);
-            System.out.println(ts[i]);
+        String smallest = s.substring(0, k);
+        String largest = s.substring(0, k);
+        
+        for(int i = 0; i <= s.length() - k; i++){
+            String sTemp = s.substring(i, i + k);
+            System.out.println(sTemp + "?" + smallest);
+            if(sTemp.compareTo(smallest) < 0) {
+                smallest = sTemp;
+            }
+            System.out.println(sTemp + "?" + largest);
+            if(sTemp.compareTo(largest) > 0) {
+                largest = sTemp;
+            } 
         }
-        System.out.println(ts.length);
+        
         return smallest + "\n" + largest;
     }
 
-    public static String getSmallestAndLargestPro(String s, int k) {
+
+    /*public static String getSmallestAndLargestPro(String s, int k) {
         String smallest = "";
         String largest = "";
         String ts = new TreeSet<String>();
@@ -35,5 +42,5 @@ public class JavaSubstringComparisonsSolution {
         largest = ts.last();
 
         return smallest + "\n" + largest;
-    }
+    }*/
 }
