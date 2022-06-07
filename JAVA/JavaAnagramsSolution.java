@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class JavaAnagramsSolution {
     public static void main(String[] args) {
@@ -33,7 +32,7 @@ public class JavaAnagramsSolution {
         b = b.toLowerCase();
 
         // populate a map with letters and frequencies of String b
-        Map<Character, Integer> map = new HashMap<>();
+        java.util.Map<Character, Integer> map = new java.util.HashMap<>();
 
         for (int k = 0; k < b.length(); k++) {
             char letter = b.charAt(k);
