@@ -1,4 +1,5 @@
-import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 public class PatternSyntaxCheckersSolucion {
     public static void main(String[] args) {
         int testCases = 3;
