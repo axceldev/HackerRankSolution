@@ -1,9 +1,9 @@
 
 public class JavaAnagramsSolution {
     public static void main(String[] args) {
-        String a = "anagram";
+        String a = "anrgram";
         String b = "margana";
-        boolean ret = isAnagram(a, b);
+        boolean ret = isAnagramPro(a, b);
         System.out.println((ret) ? "Anagrams" : "Not Anagrams");
     }
 
@@ -32,7 +32,7 @@ public class JavaAnagramsSolution {
         b = b.toLowerCase();
 
         // populate a map with letters and frequencies of String b
-        java.util.Map<Character, Integer> map = new java.util.HashMap<>();
+        java.util.Map<Character, Integer> map = new java.util.HashMap<Character, Integer>();
 
         for (int k = 0; k < b.length(); k++) {
             char letter = b.charAt(k);
