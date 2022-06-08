@@ -3,6 +3,7 @@ public class JavaStringReverseSolution {
 
     public static void main(String[] args) {
         String A="madam";
+        esPalindromo(A);
     }
     
     public static boolean esPalindromo(String cadena) {
