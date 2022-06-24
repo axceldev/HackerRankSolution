@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class ValidUsernameRegularExpressionSolution {
     //private static final Scanner scan = new Scanner(System.in);
@@ -22,6 +22,8 @@ class UsernameValidator {
     /*
      * Write regular expression here.
      */
-    public static final String regularExpression = "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";
+    public static final String regularExpression = "^[A-a-zZ][a-zA-Z0-9_]{7,29}$";
+
+    //Link --> https://www.youtube.com/watch?v=M72lwALYRJU entender las expresiones regulares
 
 }
