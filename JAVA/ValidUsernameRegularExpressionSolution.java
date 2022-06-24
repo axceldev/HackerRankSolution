@@ -25,6 +25,7 @@ class UsernameValidator {
     public static final String regularExpression = "^[A-a-zZ][a-zA-Z0-9_]{7,29}$";
 
     //Link --> https://www.youtube.com/watch?v=M72lwALYRJU entender las expresiones regulares
+    // https://www.youtube.com/watch?v=wfogZfIS03U --> guia facil para aprender regex
 
     /*
     https://regex101.com/ --> page para validar regex
