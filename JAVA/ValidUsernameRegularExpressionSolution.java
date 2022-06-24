@@ -26,4 +26,9 @@ class UsernameValidator {
 
     //Link --> https://www.youtube.com/watch?v=M72lwALYRJU entender las expresiones regulares
 
+    /*
+    https://regex101.com/ --> page para validar regex
+    https://regexr.com/ --> validar regex            
+    */ 
+
 }
